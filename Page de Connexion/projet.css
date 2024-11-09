@@ -1,0 +1,108 @@
+head,body{
+    height: 100%; width: 100%;
+    overflow: hidden;
+}
+
+body{
+    padding: 0; margin: 0;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(135deg, #01ffff, #ff0000);
+
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #ff0202,#0574f2);
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.box{
+    text-align: center;
+    background-color: #1d1d1d;
+    margin: 0 auto; padding: 15px;
+    border-radius: 1em;
+}
+
+p{
+    font-family: "Nosifer", sans-serif;
+    font-size: 30px;
+    padding-left: 50px;
+
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0000 50%, #01ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img{
+    height: 70%;
+}
+.popcorn{
+    padding-top: 15%;
+    padding-left: 5%;
+    transform: rotate(-22deg);
+}
+
+.bobine{
+    padding-right: 5%;
+    padding-bottom: 15%;    
+    transform: rotate(22deg);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    margin:15px;
+}
+a:hover{color: #ff0000;}
+
+form{
+    display: grid;
+    gap : 1em;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+button{
+    font-size: smaller;
+    border-radius: 5px;
+    border: none;
+    background-color: #e2e2e2;
+    height:40px;
+}
+.register-button{
+    background-color: #444444;
+    color: rgb(206, 206, 206);
+}
+/*Transitions*/
+.signin-button:hover{
+    background-color: #bdbdbd;
+}
+.register-button:hover{
+    background-color: #333333;
+}
+
+input{
+    background-color: #1d1d1d; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    border: 1px solid #444; /* Bordure */
+    padding: 10px; /* Espacement interne */
+    font-size: 16px; /* Taille de police */
+    border-radius: 5px; /* Coins arrondis */
+    outline: none; /* Retire le contour bleu par défaut */
+}
