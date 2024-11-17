@@ -196,109 +196,110 @@ INSERT INTO AVOIR VALUES
 (29,131,31,'Horreur'),
 (29,132,31,'Horreur'),
 
---Camping
-(30,133,32,'Comédie'),
-(30,134,32,'Comédie'),
-(30,135,32,'Comédie'),
-(30,136,32,'Comédie'),
-
---Astérix et Obélix
-(31,137,33,'Comédie'),
-(31,138,33,'Comédie'),
-(31,139,33,'Comédie'),
-
---Les Tuches
-(32,140,34,'Comédie'),
-(32,141,34,'Comédie'),
-(32,142,34,'Comédie'),
-(32,143,34,'Comédie'),
-
---Les Profs
-(33,144,35,'Comédie'),
-(33,145,35,'Comédie'),
-(33,146,35,'Comédie'),
-
---Rien à déclarer
-(34,147,36,'Comédie'),
-(34,148,36,'Comédie'),
-(34,149,36,'Comédie'),
-(34,150,36,'Comédie'),
-
 --Maigret
-(35,151,37,'Policier'),
-(35,152,37,'Policier'),
-(35,153,37,'Policier'),
+(30,130,32,'Policier'),
+(30,131,32,'Policier'),
+(30,132,32,'Policier'),
+(30,133,32,'Policier'),
 
 --Bac Nord
-(36,154,38,'Policier'),
-(36,155,38,'Policier'),
-(36,156,38,'Policier'),
+(31,134,33,'Policier'),
+(31,135,33,'Policier'),
+(31,136,33,'Policier'),
+(31,137,33,'Policier'),
 
---À Couteaux Tirés
-(37,157,39,'Policier'),
-(37,158,39,'Policier'),
-(37,159,39,'Policier'),
-(37,160,39,'Policier'),
+--A couteaux tirés
+(32,138,34,'Policier'),
+(32,139,34,'Policier'),
+(32,140,34,'Policier'),
 
 --Copycat
-(38,161,40,'Policier'),
-(38,162,40,'Policier'),
-(38,163,40,'Policier'),
+(33,141,35,'Policier'),
+(33,142,35,'Policier'),
+(33,143,35,'Policier'),
+(33,144,35,'Policier'),
 
 --Criminal Squad
-(39,164,41,'Policier'),
-(39,165,41,'Policier'),
-(39,166,41,'Policier'),
+(34,145,36,'Policier'),
+(34,146,36,'Policier'),
+(34,147,36,'Policier'),
 
 --Le Bon, la Brute et le Truand
-(40,167,42,'Western'),
-(40,168,42,'Western'),
-(40,169,42,'Western'),
-
---Django Unchained
-(41,170,43,'Western'),
-(41,171,43,'Western'),
-(41,172,43,'Western'),
-(41,173,43,'Western'),
-
---Les Huit Salopards
-(42,174,44,'Western'),
-(42,175,44,'Western'),
-(42,176,44,'Western'),
-(42,177,44,'Western'),
-
---La Ballade de Buster Scruggs
-(43,178,45,'Western'),
-(43,179,45,'Western'),
-(43,180,45,'Western'),
-(43,181,45,'Western'),
-(43,182,46,'Western'),
-(43,183,46,'Western'),
-(43,184,46,'Western'),
-(43,185,46,'Western'),
+(35,148,37,'Western'),
+(35,149,37,'Western'),
+(35,150,37,'Western'),
+(35,151,37,'Western'),
 
 --Gran Torino
-(44,186,47,'Western'),
-(44,187,47,'Western'),
-(44,188,47,'Western'),
+(36,152,38,'Western'),
+(36,153,38,'Western'),
+(36,154,38,'Western'),
+
+--Django Unchained
+(37,155,39,'Western'),
+(37,156,39,'Western'),
+(37,157,39,'Western'),
+
+--Les Huit Salopards
+(38,158,40,'Western'),
+(38,159,40,'Western'),
+(38,160,40,'Western'),
+(38,161,40,'Western'),
+
+--La Ballade de Buster Scruggs
+(39,162,41,'Western'),
+(39,163,41,'Western'),
+(39,164,41,'Western'),
 
 --Océans
-(45,189,48,'Documentaires'),
-(45,190,48,'Documentaires'),
-(45,191,49,'Documentaires'),
-(45,192,49,'Documentaires'),
+(40,165,42,'Documentaires'),
+(40,166,42,'Documentaires'),
+(40,167,42,'Documentaires'),
 
---Félins
-(46,193,50,'Documentaires'),
-(46,194,50,'Documentaires'),
-(46,195,51,'Documentaires'),
-(46,196,51,'Documentaires'),
+--Félin
+(41,168,43,'Documentaires'),
+(41,169,43,'Documentaires'),
+(41,170,43,'Documentaires'),
 
---La Marche de l'Empereur
-(47,197,52,'Documentaires'),
-(47,198,52,'Documentaires'),
+--À l aube de notre histoire
+(42,171,44,'Documentaires'),
+(42,172,44,'Documentaires'),
+(42,173,44,'Documentaires'),
+(42,174,44,'Documentaires'),
+
+--Apollo 11
+(43,175,45,'Documentaires'),
+(43,176,45,'Documentaires'),
+(43,177,45,'Documentaires'),
+(43,178,45,'Documentaires'),
 
 --La Chute
-(48,199,53,'Documentaires'),
-(48,200,53,'Documentaires'),
-(48,201,53,'Documentaires'),
+(44,179,,'Documentaires'),
+(44,180,,'Documentaires'),
+(44,181,,'Documentaires'),
+(44,182,,'Documentaires'),
+
+--Camping
+(45,183,48,'Comédie'),
+(45,184,48,'Comédie'),
+(45,185,48,'Comédie'),
+
+--Astérix et Obélix : Mission Cléopâtre
+(46,186,49,'Comédie'),
+(46,187,49,'Comédie'),
+(46,186,50,'Comédie'),
+(46,187,50,'Comédie'),
+
+--Les Tuches
+(47,188,51,'Comédie'),
+(47,189,51,'Comédie'),
+(47,188,52,'Comédie'),
+(47,189,52,'Comédie'),
+
+--Les Profs
+(48,190,53,'Comédie'),
+(48,191,53,'Comédie'),
+
+--Rien à déclarer
+(49,192,24,'Comédie'),
+(49,193,24,'Comédie');
