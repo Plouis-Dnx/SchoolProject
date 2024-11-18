@@ -168,7 +168,7 @@ a:hover {
     grid-template-columns: repeat(3, 1fr); /* 3 films par ligne */
     grid-gap: 30px; /* Augmenter l'espacement entre les films */
     width: 100%;
-    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+    overflow-x: fixed; /* Permet le défilement horizontal si nécessaire */
     padding-bottom: 10px;
 }
 
@@ -208,4 +208,29 @@ a:hover {
     margin-top: 10px;
     color: white;
     font-weight: bold;
+}
+
+.dropdown-menu{
+    position:relative;
+    display:inline-block;
+}
+.submenu{
+    display:none;
+    position:absolute;
+    background-color: black;
+    min-width : 160px;
+    box-shadow : 0px 8px 16px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.submenu a{
+    color:white;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+.submenu a:hover{
+    background-color: #333333;
+}
+.dropdown-menu:hover .submenu{
+    display:block;
 }
