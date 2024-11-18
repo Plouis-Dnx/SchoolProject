@@ -1,4 +1,2 @@
-SELECT * FROM Réalisteurs;
-SELECT * FROM Films;
-SELECT * FROM Acteurs;
-SELECT * FROM Thèmes;
+SELECT * FROM Films
+WHERE Films.idFilm = AVOIR.idFilm;
