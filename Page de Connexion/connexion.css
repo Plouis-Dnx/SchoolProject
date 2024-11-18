@@ -57,10 +57,12 @@ img{
     padding-top: 15%;
     padding-left: 5%;
     transform: rotate(-22deg);
+    transition: transform 0.3s ease;
 }
 .popcorn:hover{
     transition:transform 0.3s ease;
-    transform:rotate(-30deg);
+    transform:rotate(-25deg);
+
 }
 
 .bobine{
