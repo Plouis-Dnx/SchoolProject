@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieAddict - Horreur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Page d'accueil/projet_accueil.css">
+    <link rel="icon" href="popcorn.png">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="header">
+        <nav>
+            <a href="../Page d'accueil/projet_accueil.html">Accueil</a>
+            <a href="TousLesFilms.html">Films</a>
+            <div class="dropdown-menu">
+                <a href="#">Genre</a>
+                <div class="submenu">
+                    <a href="filmAction.html">Action</a>
+                    <a href="filmAventure.html">Aventure</a>
+                    <a href="filmComédie.html">Comédie</a>
+                    <a href="filmDocumentaire.html">Documentaire</a>
+                    <a href="filmFantastique.html">Fantastique</a>
+                    <a href="film_horreur.html">Horreur</a>
+                    <a href="film_policier.html">Policier</a>
+                    <a href="film_science_fiction.html">Science-Fiction</a>
+                    <a href="film_thriller.html">Thriller</a>
+                    <a href="film_western.html">Western</a>
+                </div>
+            </div>
+            <a href="../Page de Connexion/connexion.html">Mon Compte</a>
+        </nav>
+    </div>
+    
+    <!-- Section Des Films -->
+    <div class="container">
+        <div class="movie-card">
+            <div class="movie-grid">
+                <div class="movie-item">
+                    <img src="Affiche_Conjuring.jpg" alt="Conjuring : Les Dossiers Warren"
+                         onclick="openModal('Affiche_Conjuring.jpg', 'Conjuring : Les Dossiers Warren', 
+                         'Les enquêteurs paranormaux Ed et Lorraine Warren aident une famille terrorisée par une présence maléfique dans leur ferme isolée.', 
+                         'Vera Farmiga, Patrick Wilson, Lili Taylor', 'James Wan', 'https://www.youtube.com/embed/McOmzgX09wo')">
+                    <p>Conjuring : Les Dossiers Warren</p>
+                </div>
+                <div class="movie-item">
+                    <img src="Affiche_La_Nonne.webp" alt="La Nonne"
+                         onclick="openModal('Affiche_La_Nonne.webp', 'La Nonne', 
+                         'Une jeune nonne et un prêtre enquêtent sur la mort mystérieuse d\'une religieuse en Roumanie et découvrent une force démoniaque.', 
+                         'Taissa Farmiga, Demián Bichir, Bonnie Aarons', 'Corin Hardy', 'https://www.youtube.com/embed/AzeAEmt-yno')">
+                    <p>La Nonne</p>
+                </div>
+                <div class="movie-item">
+                    <img src="Affiche_Saw.jpg" alt="Saw"
+                         onclick="openModal('Affiche_Saw.jpg', 'Saw', 
+                         'Deux hommes se réveillent enchaînés dans une pièce sombre, piégés par le tueur Jigsaw, et doivent participer à un jeu mortel.', 
+                         'Cary Elwes, Leigh Whannell, Danny Glover', 'James Wan', 'https://www.youtube.com/embed/X6QHJjjbKlA')">
+                    <p>Saw</p>
+                </div>
+                <div class="movie-item">
+                    <img src="Affiche_Scream.webp" alt="Scream"
+                         onclick="openModal('Affiche_Scream.webp', 'Scream', 
+                         'Un tueur masqué traque des adolescents dans la ville de Woodsboro en suivant les règles des films d\'horreur.', 
+                         'Neve Campbell, Courteney Cox, David Arquette', 'Wes Craven', 'https://www.youtube.com/embed/d7yWagIcCLE')">
+                    <p>Scream</p>
+                </div>
+                <div class="movie-item">
+                    <img src="Affiche_Smile.jpg" alt="Smile"
+                         onclick="openModal('Affiche_Smile.jpg', 'Smile', 
+                         'Après un événement traumatisant, la docteure Rose Cotter fait face à des phénomènes inquiétants qui mettent sa vie en danger.', 
+                         'Sosie Bacon, Jessie T. Usher, Kyle Gallner', 'Parker Finn', 'https://www.youtube.com/embed/cWFD7WvDILE')">
+                    <p>Smile</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-left">
+                <img id="modal-image" src="" alt="Film poster">
+            </div>
+            <div class="modal-right">
+                <h2 id="modal-title"></h2>
+                <p id="modal-summary"></p>
+                <p><strong>Acteurs :</strong> <span id="modal-actors"></span></p>
+                <p><strong>Réalisateur :</strong> <span id="modal-director"></span></p>
+                <div class="modal-trailer">
+                    <h3>Bande-annonce :</h3>
+                    <iframe id="modal-trailer-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fonction pour ouvrir la modale avec les informations du film
+        function openModal(imageSrc, title, summary, actors, director, trailerUrl) {
+            document.getElementById('modal-image').src = imageSrc;
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-summary').innerText = summary;
+            document.getElementById('modal-actors').innerText = actors;
+            document.getElementById('modal-director').innerText = director;
+            
+            // Remplacer l'URL YouTube par l'URL d'intégration 'embed'
+            document.getElementById('modal-trailer-video').src = trailerUrl;
+
+            const modal = document.getElementById('movie-modal');
+            modal.style.display = 'flex'; // Afficher la modale
+        }
+
+        // Fonction pour fermer la modale
+        function closeModal() {
+            const modal = document.getElementById('movie-modal');
+            modal.style.display = 'none'; // Cacher la modale
+            // Supprimer la vidéo pour éviter qu'elle continue à jouer après la fermeture
+            document.getElementById('modal-trailer-video').src = "";
+        }
+    </script>
+</body>
+</html>
