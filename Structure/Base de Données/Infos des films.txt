@@ -1,0 +1,882 @@
+Thème Horreur :
+
+Conjuring :
+
+Réalisateur:
+('Wan', 'James'),
+
+Acteurs :
+('Farmiga', 'Vera'),
+('Wilson', 'Patrick'),
+('Taylor', 'Lili'),
+('Livingston', 'Ron'),
+
+Résumé :
+('Conjuring : Les Dossiers Warren', '01:52:00', '2013-08-21', 'Les enquêteurs 
+paranormaux Ed et Lorraine Warren aident une famille terrorisée par une présence 
+maléfique dans leur ferme isolée.'),
+
+Bande-Annonce :
+https://www.youtube.com/embed/McOmzgX09wo
+
+La Nonne :
+
+Réalisateur:
+('Hardy', 'Corin'),
+
+Acteurs :
+('Farmiga', 'Taissa'),
+('Bichir', 'Demián'),
+('Aarons', 'Bonnie'),
+
+Résumé :
+('La Nonne', '01:36:00', '2018-09-19', 'Une jeune nonne et un prêtre enquêtent sur 
+la mort mystérieuse d une religieuse en Roumanie et découvrent une force démoniaque.'),
+
+Bande-Annonce :
+https://www.youtube.com/embed/AzeAEmt-yno
+
+Saw :
+
+Réalisateur:
+('Wan', 'James'),
+
+Acteurs :
+('Elwes', 'Cary'),
+('Whannell', 'Leigh'),
+('Glover', 'Danny'),
+('Bell', 'Tobin'),
+
+Résumé :
+('Saw', '01:43:00', '2004-11-10', 'Deux hommes se réveillent enchaînés dans une 
+pièce sombre, piégés par le tueur Jigsaw, et doivent participer à un jeu mortel.'),
+
+Bande-Annonce :
+https://www.youtube.com/embed/X6QHJjjbKlA
+
+Scream :
+
+Réalisateur:
+('Craven', 'Wes'),
+
+Acteurs :
+('Campbell', 'Neve'),
+('Cox', 'Courteney'),
+('Arquette', 'David'),
+('Ulrich', 'Skeet'),
+
+Résumé :
+('Scream', '01:51:00', '1997-07-02', 'Un tueur masqué traque des adolescents 
+dans la ville de Woodsboro en suivant les règles des films d horreur.'),
+
+Bande-Annonce :
+https://www.youtube.com/embed/d7yWagIcCLE
+
+Smile :
+
+Réalisateur:
+('Finn', 'Parker'),
+
+Acteurs :
+('Bacon', 'Sosie'),
+('Gallner', 'Kyle'),
+('Stasey', 'Caitlin'),
+
+Résumé :
+('Smile', '01:55:00', '2022-09-28', 'Après un événement traumatisant, la docteure 
+Rose Cotter fait face à des phénomènes inquiétants qui mettent sa vie en danger.'),
+
+Bande-Annonce :
+https://www.youtube.com/embed/cWFD7WvDILE
+
+**********************************************************************
+
+Thème Western :
+
+Django Unchained
+
+Réalisateur: ('Tarantino', 'Quentin'),
+
+Acteurs :
+('Foxx', 'Jamie'),
+('Waltz', 'Christoph'),
+('DiCaprio', 'Leonardo'),
+('Washington', 'Kerry'),
+
+Résumé :
+('Django Unchained', '02:45:00', '2013-01-16', "Django, un esclave libéré, 
+devient chasseur de primes et cherche à libérer sa femme des griffes d'un 
+propriétaire de plantation sadique."),
+
+Bande-Annonce :  https://www.youtube.com/embed/K2XjgsfzDrU
+
+Gran Torino
+
+Réalisateur: ('Eastwood', 'Clint'),
+
+Acteurs :
+('Eastwood', 'Clint'),
+('Vang', 'Bee'),
+('Her', 'Ahney'),
+
+Résumé :
+('Gran Torino', '01:56:00', '2009-02-25', "Un vétéran de la guerre de Corée, 
+Walt Kowalski, finit par développer une relation inattendue avec son jeune 
+voisin d'origine hmong."),
+
+Bande-Annonce : https://www.youtube.com/embed/ih9_s8YcfLc
+
+La Ballade de Buster Scruggs
+
+Réalisateur: ('Coen', 'Joel'), ('Coen', 'Ethan'),
+
+Acteurs :
+('Nelson', 'Tim Blake'),
+('Gleeson', 'Brendan'),
+('Neeson', 'Liam'),
+('Franco', 'James'),
+
+Résumé :
+('La Ballade de Buster Scruggs', '02:12:00', '2018-11-16', "Une série de six 
+histoires se déroulant dans l Ouest américain, chacune explorant des thèmes 
+de la mort, de la violence et de l ironie du destin."),
+
+Bande-Annonce : https://www.youtube.com/embed/ae-mIgmY-yo
+
+Le Bon, La Brute et Le Truand
+
+Réalisateur: ('Leone', 'Sergio'),
+
+Acteurs :
+('Eastwood', 'Clint'),
+('Van Cleef', 'Lee'),
+('Wallach', 'Éli'),
+
+Résumé :
+('Le Bon, la Brute et le Truand', '02:58:00', '1968-03-08', 'Trois hommes cherchent 
+à récupérer un trésor caché pendant la guerre de Sécession, chacun jouant un jeu 
+dangereux.'),
+
+Bande-Annonce : https://www.youtube.com/embed/WA1hCZFOPqs
+
+Les Huit Salopards
+
+Réalisateur: ('Tarantino', 'Quentin'),
+
+Acteurs :
+('Jackson', 'Samuel L.'),
+('Russell', 'Kurt'),
+('Jason Leigh', 'Jennifer'),
+('Goggins', 'Walton'),
+
+Résumé :
+('Les Huit Salopards', '02:47:00', '2016-01-06', "Huit voyageurs se retrouvent 
+piégés dans une cabane pendant une tempête de neige et découvrent que l'un d'entre 
+eux n'est pas ce qu'il prétend."),
+
+Bande-Annonce : https://www.youtube.com/embed/7sxItylVdCM
+
+**********************************************************************
+
+Thème Thriller :
+
+American Nightmare
+
+Réalisateur: ('DeMonaco', 'James'),
+
+Acteurs :
+('Hawke', 'Ethan'),
+('Headey', 'Lena'),
+('Burkholder', 'Max'),
+('Kane', 'Adélaïde'),
+
+Résumé :
+('American Nightmare', '01:25:00', '2013-06-07', 'Dans un futur proche, une nuit 
+par an, tous les crimes sont permis. Une famille doit survivre à cette nuit de chaos.'),
+
+Bande-Annonce : https://www.youtube.com/embed/AVRk-UhPkHU
+
+Da Vinci Code
+
+Réalisateur: ('Howard', 'Ron'),
+
+Acteurs :
+('Hanks', 'Tom'),
+('Tautou', 'Audrey'),
+('McKellen', 'Ian'),
+('Bettany', 'Paul'),
+
+Résumé :
+('Da Vinci Code', '02:29:00', '2006-05-17', 'Robert Langdon enquête sur le meurtre 
+d un conservateur du Louvre, ce qui le mène à découvrir un ancien secret religieux.'),
+
+Bande-Annonce : https://www.youtube.com/embed/dOJBaIjXGnQ
+
+Le Chant du Loup
+
+Réalisateur: ('Baudry', 'Antonin'),
+
+Acteurs :
+('Civil', 'François'),
+('Sy', 'Omar'),
+('Kassovitz', 'Mathieu'),
+('Kateb', 'Réda'),
+
+Résumé :
+('Le Chant du Loup', '01:55:00', '2019-02-20', 'Un homme doué d une oreille absolue
+pour les sons sous-marins doit empêcher une catastrophe mondiale impliquant des
+sous-marins nucléaires.'),
+
+Bande-Annonce : https://www.youtube.com/embed/ATGDQpH-gOM
+
+Le Monde après Nous
+
+Réalisateur: ('Esmail', 'Sam'),
+
+Acteurs :
+('Gabrielli', 'Aurélien'),
+('Chevillotte', 'Louise'),
+('Bentaïeb', 'Saadia'),
+
+Résumé :
+('Le Monde après Nous', '02:20:00', '2023-10-25', 'Amanda et Clay passent 
+des vacances dans une maison isolée à Long Island avec leurs enfants. 
+Un soir, les propriétaires, Ruth et G. H., reviennent en urgence en disant 
+qu une coupure électrique affecte la région. Isolés sans téléphone, télévision 
+ni internet, les locataires se demandent s ils peuvent faire confiance à leurs hôtes.'),
+
+Bande-Annonce : https://www.youtube.com/embed/glPta0GQkTI
+
+The Revenant
+
+Réalisateur: ('González Iñárritu', 'Alejandro'),
+
+Acteurs :
+('DiCaprio', 'Leonardo'),
+('Hardy', 'Tom'),
+('Gleeson', 'Domhnall'),
+('Poulter', 'Will'),
+
+Résumé :
+('The Revenant', '02:36:00', '2016-02-24', 'Hugh Glass, laissé pour mort 
+après une attaque d ours, survit dans des conditions extrêmes pour se 
+venger de ceux qui l ont trahi.'),
+
+Bande-Annonce : https://www.youtube.com/embed/E1jOiqbNTpo
+
+**********************************************************************
+
+Thème Science-Fiction :
+
+Alien
+
+Réalisateur: ('Scott', 'Ridley'),
+
+Acteurs :
+('Weaver', 'Sigourney'),
+('Skerritt', 'Tom'),
+('Cartwright', 'Veronica'),
+('Hurt', 'John'),
+('Holm', 'Ian'),
+
+Résumé :
+('Alien', '01:57:00', '1979-05-25', "L équipage d un vaisseau spatial reçoit un
+signal mystérieux et atterrit sur une planète inconnue. Ils découvrent une
+créature extraterrestre qui menace leur survie."),
+
+Bande-Annonce : https://www.youtube.com/embed/qFCMm6gJQe8
+
+Blade Runner 2049
+
+Réalisateur: ('Villeneuve', 'Denis'),
+
+Acteurs :
+('Gosling', 'Ryan'),
+('Ford', 'Harrison'),
+('de Armas', 'Ana'),
+('Wright', 'Robin'),
+('Hoeks', 'Sylvia'),
+
+Résumé :
+('Blade Runner 2049', '02:43:00', '2017-10-04',"En 2049, la société est
+fragilisée par les nombreuses tensions entre les humains et leurs esclaves
+créés par bio-ingénierie. L officier K est un blade runner: il fait partie
+d une force d intervention d élite chargée de trouver et d éliminer ceux
+qui n obéissent pas aux ordres des humains."),
+
+Bande-Annonce : https://www.youtube.com/embed/O4C5cwSbXZ8
+
+Inception
+
+Réalisateur: ('Nolan', 'Christopher'),
+
+Acteurs :
+('DiCaprio', 'Leonardo'),
+('Gordon-Levitt', 'Joseph'),
+('Page', 'Elliot'),
+('Hardy', 'Tom'),
+('Watanabe', 'Ken'),
+('Cotillard', 'Marion'),
+
+Résumé :
+('Inception', '02:28:00', '2010-07-16',"Dom Cobb, un voleur expert en
+extraction de secrets dans les rêves, doit implanter une idée dans l esprit
+d un dirigeant. Pour cela, il recrute une équipe pour réaliser une mission
+dans le monde des rêves."),
+
+Bande-Annonce : https://www.youtube.com/embed/HcoZbHBDHQA
+
+Interstellar
+
+Réalisateur: ('Nolan', 'Christopher'),
+
+Acteurs :
+('McConaughey', 'Matthew'),
+('Hathaway', 'Anne'),
+('Chastain', 'Jessica'),
+
+Résumé :
+('Interstellar','02:49:00','2014-11-07',"Dans un futur proche, la Terre est
+en danger. Un ancien pilote de la NASA part avec un groupe d explorateurs à
+travers un trou de ver pour trouver une nouvelle habitable pour l humanité."),
+
+Bande-Annonce : https://www.youtube.com/embed/HsPP6xSzQoE
+
+Matrix
+
+Réalisateur: ('Wachowski', 'Lana'), ('Wachowski', 'Lilly'),
+
+Acteurs :
+('Reeves', 'Keanu'),
+('Fishburne', 'Laurence'),
+('Moss', 'Carrie-Anne'),
+('Weaving', 'Hugo'),
+('Pantoliano', 'Joe'),
+
+Résumé :
+('Matrix', '02:16:00','1999-06-23', "Programmeur anonyme dans un service
+administratif le jour, Thomas Anderson devient Neo la nuit venue. Sous
+ce pseudonyme, il est l un des pirates les plus recherchés du cyber-espace.
+À cheval entre deux mondes, Neo est assailli par d étranges songes et des messages
+cryptés provenant d un certain Morpheus. Celui-ci l exhorte à aller au-delà des
+apparences et à trouver la réponse à la question qui hante constamment
+ses pensées : qu est-ce que la Matrice ?"),
+
+Bande-Annonce : https://www.youtube.com/embed/8xx91zoASLY
+
+**********************************************************************
+
+Thème Policier :
+
+A Couteaux Tirés
+
+Réalisateur: ('Johnson', 'Rian'),
+
+Acteurs :
+('Craig', 'Daniel'),
+('Evans', 'Chris'),
+('de Armas', 'Ana'),
+('Curtis', 'Jamie Lee'),
+
+Résumé :
+('À couteaux tirés', '02:10:00', '2019-11-27', 'Après la mort mystérieuse d un 
+célèbre écrivain, le détective Benoit Blanc enquête sur la famille dysfonctionnelle 
+de l homme pour trouver le coupable.'),
+
+Bande-Annonce : https://www.youtube.com/embed/4Q6wJQq3UKM
+
+Bac Nord
+
+Réalisateur: ('Jimenez', 'Cédric'),
+
+Acteurs :
+('Lellouche', 'Gilles'),
+('Civil', 'François'),
+('Leklou', 'Karim'),
+
+Résumé :
+('Bac Nord', '01:45:00', '2021-08-18', 'Trois policiers de la brigade 
+anti-criminalité de Marseille sont confrontés à une opération qui dérape dans 
+les quartiers nord de la ville.'),
+
+Bande-Annonce : https://www.youtube.com/embed/E4FdK4VdGz0
+
+Copycat
+
+Réalisateur: ('Amiel', 'Jon'),
+
+Acteurs :
+('Weaver', 'Sigourney'),
+('Hunter', 'Holly'),
+('Mulroney', 'Dermot'),
+
+Résumé :
+('Copycat', '02:04:00', '1995-10-27', 'Une experte en psychologie criminelle, 
+cible d un tueur en série, aide la police à résoudre une série de meurtres 
+commis par un imitateur.'),
+
+Bande-Annonce : https://www.youtube.com/embed/BPwXxQ-yd0Q
+
+Criminal Squad
+
+Réalisateur: ('Gudegast', 'Christian'),
+
+Acteurs :
+('Butler', 'Gérard'),
+('Schreiber', 'Pablo'),
+('Jackson Jr.', "O'Shea"),
+
+Résumé :
+('Criminal Squad', '02:28:00', '2018-01-24', 'Une unité d élite de la police de 
+Los Angeles traque une équipe de braqueurs de banques planifiant un vol impossible 
+à la réserve fédérale.'),
+
+Bande-Annonce : https://www.youtube.com/embed/evUO4UCnrOs
+
+Maigret
+
+Réalisateur: ('Leconte', 'Patrice'),
+
+Acteurs :
+('Depardieu', 'Gérard'),
+('Clément', 'Aurore'),
+('Bernier', 'Mélanie'),
+
+Résumé :
+('Maigret', '01:29:00', '2022-02-23', 'Le commissaire Maigret enquête sur la mort 
+d une jeune femme retrouvée dans une robe de soirée à Paris et plonge dans 
+un Paris mystérieux.'),
+
+Bande-Annonce : https://www.youtube.com/embed/DfsTji_tedk
+
+**********************************************************************
+
+Thème Action :
+
+Fast&Furious7
+
+Réalisateur: ('Cohen', 'Rob'),
+
+Acteurs :
+('Diesel', 'Vin'),
+('Walker', 'Paul'),
+('Rodriguez', 'Michelle'),
+('Brewster', 'Jordana'),
+('Johnson', 'Dwayne'),
+
+Résumé :
+('Fast & Furious 7', '02:17:00', '2015-04-01', 'L équipe de Dominic Toretto 
+affronte Deckard Shaw, un assassin cherchant à venger son frère.'),
+
+Bande-Annonce : https://www.youtube.com/embed/Wm3jXZhqj-I
+
+James Bond
+
+Réalisateur: ('Young', 'Terence'),
+
+Acteurs :
+('Connery', 'Sean'),
+('Lazenby', 'George'),
+('Moore', 'Roger'),
+('Dalton', 'Timothy'),
+('Brosnan', 'Pierce'),
+('Craig', 'Daniel'),
+
+Résumé :
+('James Bond : Skyfall', '02:23:00', '2012-10-26', "James Bond doit protéger le 
+MI6 après que des informations confidentielles ont été divulguées, 
+tout en affrontant des fantômes de son passé."),
+
+Bande-Annonce : https://www.youtube.com/embed/WKzm6AZFbdc
+
+John Wick
+
+Réalisateur: ('Stahelski', 'Chad'), ('Leitch', 'David'),
+
+Acteurs :
+('Reeves', 'Keanu'),
+('Nyqvist', 'Michael'),
+('Allen', 'Alfie'),
+('Dafoe', 'Willem'),
+
+Résumé :
+('John Wick', '01:41:00', '2014-10-29', 'John Wick, un ancien tueur à gages, 
+traque les responsables de la mort de son chien, un dernier cadeau de sa femme 
+défunte.'),
+
+Bande-Annonce : https://www.youtube.com/embed/pWK5crMuhHY
+
+The King's Man
+
+Réalisateur: ('Vaughn', 'Matthew'),
+
+Acteurs :
+('Egerton', 'Taron'),
+('Firth', 'Colin'),
+('Jackson', 'Samuel L.'),
+('Caine', 'Michael'),
+
+Résumé :
+('The Kingsman : Première Mission', '02:11:00', '2021-12-22', 'La formation de 
+la première agence secrète indépendante, les Kingsmen, pendant la Première 
+Guerre mondiale.'),
+
+Bande-Annonce : https://www.youtube.com/embed/OjuMPG3HwBs
+
+Top Gun
+
+Réalisateur: ('Scott', 'Tony'),
+
+Acteurs :
+('Cruise', 'Tom'),
+('McGillis', 'Kelly'),
+('Kilmer', 'Val'),
+('Edwards', 'Anthony'),
+
+
+Résumé :
+('Top Gun : Maverick', '02:11:00', '2022-05-25', 'Pete "Maverick" Mitchell 
+revient pour entraîner une nouvelle génération de pilotes tout en affrontant 
+ses propres démons du passé.'),
+
+Bande-Annonce : https://www.youtube.com/embed/RqoVqZXEpgc
+
+**********************************************************************
+
+Thème Aventure :
+
+Everest
+
+Réalisateur: ('Kormákur', 'Baltasar'),
+
+Acteurs :
+('Gyllenhaal', 'Jake'),
+('Brolin', 'Josh'),
+('Clarke', 'Jason'),
+('Hawkes', 'John'),
+
+Résumé :
+('Everest', '02:01:00', '2015-09-23', "Basé sur des faits réels, deux expéditions
+d alpinistes sont prises dans une tempête mortelle lors de leur ascension de
+l Everest en 1996."),
+
+Bande-Annonce : https://www.youtube.com/embed/H0J23Tk_lfY
+
+La Planète des Singes
+
+Réalisateur: ('Wyatt', 'Rupert'),
+
+Acteurs :
+('Serkis', 'Andy'),
+('Pinto', 'Freida'),
+('Franco', 'James'),
+('Lithgow', 'John'),
+('Felton', 'Tom'),
+
+Résumé :
+('La Planète des singes : Les Origines', '01:45:00', '2011-08-10', "Un chimpanzé
+génétiquement modifié nommé César mène une révolte contre l humanité après avoir
+acquis une intelligence supérieure."),
+
+Bande-Annonce : https://www.youtube.com/embed/Vn8GriIog1s
+
+Les Trois Mousquetaires
+
+Réalisateur: ('Bourboulon', 'Martin'),
+
+Acteurs :
+('Civil', 'François'),
+('Cassel', 'Vincent'),
+('Duris', 'Romain'),
+('Marmaï', 'Pio'),
+('Green', 'Eva'),
+
+Résumé :
+("Les Trois Mousquetaires : D Artagnan", '02:01:00', '2023-04-05', "D Artagnan
+rejoint Athos, Porthos et Aramis pour protéger l honneur de la France contre
+les intrigues du cardinal de Richelieu."),
+
+Bande-Annonce : https://www.youtube.com/embed/a_OUHJziaoE
+
+Percy Jackson
+
+Réalisateur: ('Columbus', 'Chris'),
+
+Acteurs :
+('Lerman', 'Logan'),
+('Jackson', 'Brandon T.'),
+('Daddario', 'Alexandra'),
+('Brosnan', 'Pierce'),
+('Keener', 'Catherine'),
+
+Résumé :
+('Percy Jackson : Le Voleur de Foudre', '01:58:00', '2010-02-10', "Percy Jackson
+découvre qu il est le fils de Poséidon et doit prouver son innocence après avoir
+été accusé d avoir volé le foudre de Zeus."),
+
+Bande-Annonce : https://www.youtube.com/embed/Z2UAv81ow40
+
+Spaceman
+
+Réalisateur: ('Renck', 'Johan'),
+
+Acteurs :
+('Sandler', 'Adam'),
+('Mulligan', 'Carey'),
+('Dano', 'Paul'),
+('Nayyar', 'Kunal'),
+('Rossellini', 'Isabella'),
+
+Résumé :
+('Spaceman', '01:49:00', '2024-02-23', "Un astronaute est envoyé dans l espace
+pour récupérer de la poussière ancienne, tout en affrontant des menaces sur
+Terre liées à sa mission."),
+
+Bande-Annonce : https://www.youtube.com/embed/YVUYKVE8zm8
+
+**********************************************************************
+
+Thème Comédie :
+
+Astérix et Obélix
+
+Réalisateur: ('Zidi', 'Claude'),
+
+Acteurs :
+('Clavier', 'Christian'),
+('Depardieu', 'Gérard'),
+('Benigni', 'Roberto'),
+
+Résumé :
+('Astérix et Obélix : Mission Cléopâtre', '01:47:00', '2002-02-06', 'Astérix et Obélix 
+partent en Égypte pour aider la reine Cléopâtre à construire un palais pour César, 
+rencontrant de nombreuses aventures sur leur chemin.'),
+
+Bande-Annonce : https://www.youtube.com/embed/f_vxVhjlIsc
+
+Camping
+
+Réalisateur: ('Onteniente', 'Fabien'),
+
+Acteurs :
+('Dubosc', 'Franck'),
+('Lanvin', 'Gérard'),
+('Seigner', 'Mathilde'),
+('Duléry', 'Antoine'),
+
+Résumé :
+('Camping', '01:35:00', '2006-06-14', 'Un groupe de vacanciers se retrouve dans un 
+camping en France, où ils doivent faire face à des situations cocasses et des 
+conflits interpersonnels.'),
+
+Bande-Annonce : https://www.youtube.com/embed/JAKzzI1XAsM
+
+Les Profs
+
+Réalisateur: ('Martin-Laval', 'Pierre-François'),
+
+Acteurs :
+('Clavier', 'Christian'),
+('Adams', 'Kev'),
+('Nanty', 'Isabelle'),
+
+Résumé :
+('Les Profs', '01:32:00', '2013-06-05', 'Une bande de professeurs peu 
+conventionnels tente de redresser une école au bord de la fermeture avec 
+des méthodes inattendues et comiques.'),
+
+Bande-Annonce : https://www.youtube.com/embed/0o9vD4prPPU
+
+Les Tuches
+
+Réalisateur: ('Baroux', 'Olivier'),
+
+Acteurs :
+('Rouve', 'Jean-Paul'),
+('Nanty', 'Isabelle'),
+('Nadeau', 'Claire'),
+('Stern', 'Sarah'),
+
+Résumé :
+('Les Tuches', '01:32:00', '2011-12-14', 'La famille Tuches, d origine modeste, 
+gagne à la loterie et décide de partir en vacances à Nice, où leurs manières peu 
+raffinées entraînent des situations hilarantes.'),
+
+Bande-Annonce : https://www.youtube.com/embed/ndCzT6dyOqk
+
+Rien à déclarer
+
+Réalisateur: ('Boon', 'Dany'),
+
+Acteurs :
+('Boon', 'Dany'),
+('Poelvoorde', 'Benoît'),
+('Bernard', 'Julie'),
+('Viard', 'Karin'),
+
+Résumé :
+('Rien à déclarer', '01:40:00', '2010-02-03', 'Un douanier belge et un douanier 
+français doivent surmonter leurs préjugés et rivalités lors de la fermeture de la 
+frontière entre la France et la Belgique.');
+
+Bande-Annonce : https://www.youtube.com/embed/xONVqPzEqRM
+
+**********************************************************************
+
+Thème Documentaire :
+
+Apollo 11
+
+Réalisateur: ('Miller', 'Todd Douglas');
+
+Acteurs :
+
+Résumé :
+('Apollo 11', '01:33:00', '2019-06-04', "Ce documentaire retrace la mission 
+historique d'Apollo 11, qui a permis aux premiers humains de marcher sur la 
+Lune grâce à des images et des enregistrements inédits."),
+
+Bande-Annonce : https://www.youtube.com/embed/WywmJZVh2B4
+
+La Chute
+
+Réalisateur: ('Hirschbiegel', 'Oliver'),
+
+Acteurs :
+('Ganz', 'Bruno'),
+('Lara', 'Alexandra Maria'),
+('Matthes', 'Ulrich');
+
+Résumé :
+('La Chute', '01:55:00', '2005-04-13', "Un documentaire  dramatique qui décrit les
+derniers jours d'Adolph Hitler, reclus dans son bunker à Berlin, alors que l'Allemagne
+nazie s effondre autour de lui"),
+
+Bande-Annonce : https://www.youtube.com/embed/eER6HAod0rg
+
+Félins
+
+Réalisateur:('Scholey', 'Keith'), ('Fothergill', 'Alastair'),
+
+Acteurs :
+('Jackson', 'Samuel L.'),
+('Elbé', 'Pascal'),
+
+Résumé :
+('Félin', '01:29:00', '2012-04-11', "Un documentaire sur les lions et les 
+guépards du Maasai Mara au Kenya, mettant en lumière leur lutte quotidienne 
+pour la survie."),
+
+Bande-Annonce : https://www.youtube.com/embed/iN9c5MG-Z3M
+
+Océans
+
+Réalisateur:('Perrin', 'Jacques'), ('Cluzaud', 'Jacques'),
+
+Acteurs :
+('Brosnan', 'Pierce'),
+('Perrin', 'Jacques'),
+
+Résumé :
+('Océans', '01:44:00', '2010-01-27', "Un documentaire qui explore les 
+océans du monde entier et la diversité des créatures qui y vivent, révélant 
+la beauté et la fragilité des écosystèmes marins."),
+
+Bande-Annonce : https://www.youtube.com/embed/KGHwr-9hc2c
+
+**********************************************************************
+
+Thème Fantastique :
+
+Avatar
+
+Réalisateur: ('Cameron', 'James'),
+
+Acteurs :
+('Worthington', 'Sam'),
+('Saldaña', 'Zoe'),
+('Weaver', 'Sigourney'),
+('Lang', 'Stephen'),
+('Rodríguez', 'Michelle'),
+
+Résumé :
+('Avatar','02:42:00','2009-12-16',"Sur la planète Pandora, Jake Sully,
+un ancien marine paralysé, est recruté pour infiltrer les Na vi,
+une race indigène. En se connectant à un corps d Avatar,
+il découvre les merveilles de Pandora mais doit choisir son camp lorsque
+l humanité menace l équilibre de ce monde."),
+
+Bande-Annonce : https://www.youtube.com/embed/O1CzgULNRGs
+
+Dune
+
+Réalisateur: ('Villeneuve', 'Denis'),
+
+Acteurs :
+('Chalamet', 'Timothée'),
+('Ferguson', 'Rebecca'),
+('Isaac', 'Oscar'),
+('Brolin', 'Josh'),
+('Zendaya', ''),
+
+Résumé :
+('Dune', '02:35:00', '2021-09-15', "Paul Atreides découvre son destin en tant que
+leader d Arrakis, une planète clé pour l extraction de l épice, convoitée dans
+tout l univers."),
+
+Bande-Annonce : https://www.youtube.com/embed/b0WH8wWmqtE
+
+Le Seigneur des Anneaux
+
+Réalisateur: ('Jackson', 'Peter'),
+
+Acteurs :
+('Wood', 'Elijah'),
+('McKellen', 'Ian'),
+('Mortensen', 'Viggo'),
+('Astin', 'Sean'),
+
+Résumé :
+('Le Seigneur des Anneaux : La Communauté de l'Anneau','02:28:00', '2001-12-19', "Un jeune et timide hobbit, Frodon Sacquet, hérite d'un anneau magique. Sous ses apparences de simple bijou, il s'agit en réalité d'un instrument de pouvoir absolu qui permettrait à Sauron, le Seigneur des ténèbres, de régner sur la Terre du Milieu et de réduire en esclavage ses peuples. Frodon doit parvenir, avec l'aide de la Communauté de l'Anneau, composée de huit compagnons venus de différents royaumes, jusqu'à la Montagne du Destin pour le détruire."),
+
+Bande-Annonce : https://www.youtube.com/embed/zKQEQnUlqws
+
+Pirates des Caraibes
+
+Réalisateur: ('Verbinski', 'Gore'),
+
+Acteurs :
+('Depp', 'Johnny'),
+('Bloom', 'Orlando'),
+('Knightley', 'Keira'),
+('Rush', 'Geoffrey'),
+('Davenport', 'Jack'),
+
+Résumé :
+('Pirates des Caraïbes : La Malédiction du Black Pearl','02:23:00','2003-07-09',
+"Le capitaine Jack Sparrow s embarque dans une aventure pour récupérer son bateau,
+le Black Pearl, et sauver Elizabeth Swann, capturée par des pirates maudits qui
+ne peuvent ni vivre ni mourir."),
+ 
+
+Bande-Annonce : https://www.youtube.com/embed/WiZC7l0ovvk
+
+Ready Player One
+
+Réalisateur: ('Spielberg', 'Steven'),
+
+Acteurs :
+('Sheridan', 'Tye'),
+('Cooke', 'Olivia'),
+('Mendelsohn', 'Ben'),
+('Pegg', 'Simon'),
+('Rylance', 'Mark'),
+
+Résumé :
+('Ready Player One', '02:20:00', '2018-03-29', "Dans un futur dystopique, un
+jeune homme se lance dans une chasse au trésor dans un monde virtuel rempli
+de références à la pop culture, dans l espoir de gagner l héritage du
+créateur du jeu."),
+
+Bande-Annonce : https://www.youtube.com/embed/oYGkAMHCOC4
+
