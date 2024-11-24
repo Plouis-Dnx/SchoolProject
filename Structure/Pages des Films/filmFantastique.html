@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieAddict - Horreur</title>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Page d'accueil/projet_accueil.css">
-	<link rel="icon" href="popcorn.png">
+    <link rel="stylesheet" href="/Accueil/projet_accueil.css">
+	<link rel="icon" href="/Accueil/popcorn.png">
 </head>
 <body>
 
    <!-- Navbar -->
     <div class="header">
         <nav>
-            <a href="../Page d'accueil/projet_accueil.html">Accueil</a>
+            <a href="/Accueil/projet_accueil.html">Accueil</a>
             <a href="TousLesFilms.html">Films</a>
 			<div class="dropdown-menu">
                 <a href="#">Genre</a>
@@ -30,36 +30,17 @@
 					<a href="film_western.html">Western</a>
                 </div>
             </div>
-            <a href="../Page de Connexion/connexion.html">Mon Compte</a>
+            <a href="/Connexion/connexion.html">Mon Compte</a>
         </nav>
     </div>
-
+	
+	<!-- Section Des Films -->
     <div class="container">
         <div class="movie-card">
-            <div class="movie-grid">
-                <div class="movie-item">
-                    <img src="../Films_posters/Affiche_Ready_Player_One.jpg" alt="Ready Player One">
-                    <p>Ready Player One</p>
-                </div>
-                <div class="movie-item">
-                    <img src="../Films_posters/Affiche_Avatar.jpg" alt="Avatar">
-                    <p>Avatar</p>
-                </div>
-                <div class="movie-item">
-                    <img src="../Films_posters/Affiche_Pirate_des_Caraibes.jpg" alt="Pirates des Caraïbes">
-                    <p>Pirates des Caraïbes</p>
-                </div>
-                <div class="movie-item">
-                    <img src="../Films_posters/Affiche_Dune.jpg" alt="Dune">
-                    <p>Dune</p>
-                </div>
-                <div class="movie-item">
-                    <img src="../Films_posters/Affiche_Le_Seigneur_des_Anneaux.jfif" alt="Le Seigneur des Affiche_Le_Seigneur_des_Anneaux">
-                    <p>Le seigneur des anneaux</p>
-                </div>
-            </div>
+            <div class="movie-grid" id="mg"></div>
         </div>
     </div>
 
+    <script src="filmFantastique.js"></script>
 </body>
 </html>

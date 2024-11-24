@@ -2,43 +2,43 @@ INSERT INTO AVOIR VALUES
 --(idFilm, idActeur, idRéalisateur, thèmes)
 
 --Blade Runner
-(1,1,1,'Science Fiction'),
-(1,2,1,'Science Fiction'),
-(1,3,1,'Science Fiction'),
-(1,4,1,'Science Fiction'),
-(1,5,1,'Science Fiction'),
+(1,1,1,'Science-Fiction'),
+(1,2,1,'Science-Fiction'),
+(1,3,1,'Science-Fiction'),
+(1,4,1,'Science-Fiction'),
+(1,5,1,'Science-Fiction'),
 
 --Matrix
-(2,6,2,'Science Fiction'),
-(2,7,2,'Science Fiction'),
-(2,8,2,'Science Fiction'),
-(2,9,2,'Science Fiction'),
-(2,10,2,'Science Fiction'),
-(2,6,3,'Science Fiction'),
-(2,7,3,'Science Fiction'),
-(2,8,3,'Science Fiction'),
-(2,9,3,'Science Fiction'),
-(2,10,3,'Science Fiction'),
+(2,6,2,'Science-Fiction'),
+(2,7,2,'Science-Fiction'),
+(2,8,2,'Science-Fiction'),
+(2,9,2,'Science-Fiction'),
+(2,10,2,'Science-Fiction'),
+(2,6,3,'Science-Fiction'),
+(2,7,3,'Science-Fiction'),
+(2,8,3,'Science-Fiction'),
+(2,9,3,'Science-Fiction'),
+(2,10,3,'Science-Fiction'),
 
 --Alien
-(3,11,4,'Science Fiction'),
-(3,12,4,'Science Fiction'),
-(3,13,4,'Science Fiction'),
-(3,14,4,'Science Fiction'),
-(3,15,4,'Science Fiction'),
+(3,11,4,'Science-Fiction'),
+(3,12,4,'Science-Fiction'),
+(3,13,4,'Science-Fiction'),
+(3,14,4,'Science-Fiction'),
+(3,15,4,'Science-Fiction'),
 
 --Inception
-(4,16,5,'Science Fiction'),
-(4,17,5,'Science Fiction'),
-(4,18,5,'Science Fiction'),
-(4,19,5,'Science Fiction'),
-(4,20,5,'Science Fiction'),
-(4,21,5,'Science Fiction'),
+(4,16,5,'Science-Fiction'),
+(4,17,5,'Science-Fiction'),
+(4,18,5,'Science-Fiction'),
+(4,19,5,'Science-Fiction'),
+(4,20,5,'Science-Fiction'),
+(4,21,5,'Science-Fiction'),
 
 --Interstellar
-(5,22,6,'Science Fiction'),
-(5,23,6,'Science Fiction'),
-(5,24,6,'Science Fiction'),
+(5,22,6,'Science-Fiction'),
+(5,23,6,'Science-Fiction'),
+(5,24,6,'Science-Fiction'),
 
 --Ready Player One
 (6,25,7,'Fantastique'),

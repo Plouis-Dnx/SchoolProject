@@ -252,3 +252,204 @@ des méthodes inattendues et comiques.'),
 ('Rien à déclarer', '01:40:00', '2010-02-03', 'Un douanier belge et un douanier 
 français doivent surmonter leurs préjugés et rivalités lors de la fermeture de la 
 frontière entre la France et la Belgique.');
+
+
+--Ajout des affiches (23-11-2024)
+ALTER TABLE Films
+ADD COLUMN Affiche VARCHAR(100);
+
+UPDATE Films
+SET Affiche = 'Affiche_Blade_Runner_2049.jpg'
+WHERE idFilm = 1;
+
+UPDATE Films
+SET Affiche = 'Affiche_Matrix.jpg'
+WHERE idFilm = 2;
+
+UPDATE Films
+SET Affiche = 'Affiche_Alien.jpg'
+WHERE idFilm = 3;
+
+UPDATE Films
+SET Affiche = 'Affiche_Inception.webp'
+WHERE idFilm = 4;
+
+UPDATE Films
+SET Affiche = 'Affiche_Interstellar.jpg'
+WHERE idFilm = 5;
+
+UPDATE Films
+SET Affiche = 'Affiche_Ready_Player_One.jpg'
+WHERE idFilm = 6;
+
+UPDATE Films
+SET Affiche = 'Affiche_Avatar.jpg'
+WHERE idFilm = 7;
+
+UPDATE Films
+SET Affiche = 'Affiche_Pirate_des_Caraibes.jpg'
+WHERE idFilm = 8;
+
+UPDATE Films
+SET Affiche = 'Affiche_Dune.jpg'
+WHERE idFilm = 9;
+
+UPDATE Films
+SET Affiche = 'Affiche_Spaceman.jpg'
+WHERE idFilm = 10;
+
+UPDATE Films
+SET Affiche = 'Affiche_La_Planete_des_Singes.webp'
+WHERE idFilm = 11;
+
+UPDATE Films
+SET Affiche = 'Affiche_Everest.webp'
+WHERE idFilm = 12;
+
+UPDATE Films
+SET Affiche = 'Affiche_Les_Trois_Mousquetaires.jpg'
+WHERE idFilm = 13;
+
+UPDATE Films
+SET Affiche = 'Affiche_Percy_Jackson.jpg'
+WHERE idFilm = 14;
+
+UPDATE Films
+SET Affiche = 'Affiche_James_Bond.jpg'
+WHERE idFilm = 15;
+
+UPDATE Films
+SET Affiche = 'Affiche_John_Wick.jpg'
+WHERE idFilm = 16;
+
+UPDATE Films
+SET Affiche = 'Affiche_Fast_and_Furious.jpg'
+WHERE idFilm = 17;
+
+UPDATE Films
+SET Affiche = 'Affiche_Kingsman.webp'
+WHERE idFilm = 18;
+
+UPDATE Films
+SET Affiche = 'Affiche_Top_Gun.jpg'
+WHERE idFilm = 19;
+
+UPDATE Films
+SET Affiche = 'Affiche_The_Revenant.jpg'
+WHERE idFilm = 20;
+
+UPDATE Films
+SET Affiche = 'Affiche_Le_Monde_Apres_Nous.jpg'
+WHERE idFilm = 21;
+
+UPDATE Films
+SET Affiche = 'Affiche_Le_Chant_Du_Loup.webp'
+WHERE idFilm = 22;
+
+UPDATE Films
+SET Affiche = 'Affiche_Da_Vinci_Code.jpg'
+WHERE idFilm = 23;
+
+UPDATE Films
+SET Affiche = 'Affiche_American_Nightmare.webp'
+WHERE idFilm = 24;
+
+UPDATE Films
+SET Affiche = 'Affiche_Smile.jpg'
+WHERE idFilm = 25;
+
+UPDATE Films
+SET Affiche = 'Affiche_Saw.jpg'
+WHERE idFilm = 26;
+
+UPDATE Films
+SET Affiche = 'Affiche_Scream.webp'
+WHERE idFilm = 27;
+
+UPDATE Films
+SET Affiche = 'Affiche_La_Nonne.webp'
+WHERE idFilm = 28;
+
+UPDATE Films
+SET Affiche = 'Affiche_Conjuring.jpg'
+WHERE idFilm = 29;
+
+UPDATE Films
+SET Affiche = 'Affiche_Maigret.jpg'
+WHERE idFilm = 30;
+
+UPDATE Films
+SET Affiche = 'Affiche_Bac_Nord.jpg'
+WHERE idFilm = 31;
+
+UPDATE Films
+SET Affiche = 'Affiche_A_Couteaux_Tires.jpg'
+WHERE idFilm = 32;
+
+UPDATE Films
+SET Affiche = 'Affiche_Copycat.jpg'
+WHERE idFilm = 33;
+
+UPDATE Films
+SET Affiche = 'Affiche_Criminel_Squad.jpg'
+WHERE idFilm = 34;
+
+UPDATE Films
+SET Affiche = 'Affiche_Le_Bon_La_Brute_et_Le_Truand.jpg'
+WHERE idFilm = 35;
+
+UPDATE Films
+SET Affiche = 'Affiche_Gran_Torino.jpg'
+WHERE idFilm = 36;
+
+UPDATE Films
+SET Affiche = 'Affiche_Django_Unchained.jpg'
+WHERE idFilm = 37;
+
+UPDATE Films
+SET Affiche = 'Affiche_Les_Huits_Salopards.jpg'
+WHERE idFilm = 38;
+
+UPDATE Films
+SET Affiche = 'Affiche_La_Ballade_de_Buster_Scruggs.jpg'
+WHERE idFilm = 39;
+
+UPDATE Films
+SET Affiche = 'Affiche_Oceans.webp'
+WHERE idFilm = 40;
+
+UPDATE Films
+SET Affiche = 'Affiche_Felins.jpg'
+WHERE idFilm = 41;
+
+UPDATE Films
+SET Affiche = 'Affiche_A_l_Aube_de_Notre_Histoire.jpg'
+WHERE idFilm = 42;
+
+UPDATE Films
+SET Affiche = 'Affiche_Apollo11.webp'
+WHERE idFilm = 43;
+
+UPDATE Films
+SET Affiche = 'Affiche_La_Chute.webp'
+WHERE idFilm = 44;
+
+UPDATE Films
+SET Affiche = 'Affiche_Camping.webp'
+WHERE idFilm = 45;
+
+UPDATE Films
+SET Affiche = 'Affiche_Asterix_et_Obelix.jpg'
+WHERE idFilm = 46;
+
+UPDATE Films
+SET Affiche = 'Affiche_Les_Tuches.jpg'
+WHERE idFilm = 47;
+
+UPDATE Films
+SET Affiche = 'Affiche_Les_Profs.webp'
+WHERE idFilm = 48;
+
+UPDATE Films
+SET Affiche = 'Affiche_Rien_A_Declarer.webp'
+WHERE idFilm = 49;

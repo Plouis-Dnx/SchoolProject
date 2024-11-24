@@ -9,8 +9,12 @@ const port = 3000;
 // Activer CORS pour toutes les origines
 app.use(cors());
 
-// Serve les fichiers statiques (HTML, CSS, JS) à partir du dossier 'public'
-app.use(express.static(path.join(__dirname, "Structure/Page d'accueil")));
+// On spécifie à Express que les dossiers sont accessible "publiquement"
+//En gros, on accorde l'accès à nos dossiers à notre serveur : 
+app.use('/Films',express.static(path.join(__dirname, "Structure/Pages des Films")));
+app.use('/Accueil',express.static(path.join(__dirname, "Structure/Page d'accueil")));
+app.use('/Films_posters', express.static(path.join(__dirname, 'Structure/Films_posters')));
+app.use('/Connexion', express.static(path.join(__dirname, 'Structure/Page de Connexion')));
 
 // Connexion à la base de données SQLite
 const db = new sqlite3.Database('database.db', (err) => {
@@ -21,9 +25,9 @@ const db = new sqlite3.Database('database.db', (err) => {
   }
 });
 
-// Route pour récupérer les données de la table utilisateurs
+// Route pour récupérer les données de la table Films
 app.get('/api/films', (req, res) => {
-  const sql = 'SELECT * FROM Films'; // Requête SQL pour récupérer toutes les lignes de la table utilisateurs
+  const sql = 'SELECT DISTINCT Films.*, thèmes FROM Films, AVOIR WHERE Films.idFilm = AVOIR.idFilm;'; // Requête SQL pour récupérer toutes les lignes de la table Films
   
   db.all(sql, [], (err, rows) => {  // Exécute la requête
     if (err) {
@@ -36,7 +40,7 @@ app.get('/api/films', (req, res) => {
 
 // Route pour servir le fichier HTML
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "Structure/Page d'accueil", 'test.html'));
+  res.sendFile(path.join(__dirname, "Structure/Page d'accueil", 'projet_accueil.html'));
 });
 
 // Lancer le serveur
