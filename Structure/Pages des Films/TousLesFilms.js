@@ -1,3 +1,5 @@
+import { openModal, closeModal } from "/Films/modale.js";
+
 fetch('/api/films')
   .then((response) => {
     // Vérifier si la réponse est OK (code 2xx)
@@ -18,7 +20,8 @@ fetch('/api/films')
       
       // Ajouter des informations à l'élément créé
       element.innerHTML = `
-        <img src="/Films_posters/${item.Affiche}" alt="${item.titre}">
+        <img src="/Films_posters/${item.Affiche}" alt="${item.titre}"
+        onclick="openModal('/Films_posters/${item.Affiche}', '${item.titre}','Description', 'Jean Lasalle', 'Jean Palasal', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
         <p>${item.titre}</p>
       `;
       
