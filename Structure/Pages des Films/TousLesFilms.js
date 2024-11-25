@@ -29,7 +29,7 @@ fetch('/api/films')
       // Ajouter des informations à l'élément créé
       element.innerHTML = `
         <img src="/Films_posters/${item.affiche}" alt="${item.titre}"
-        onclick="openModal('/Films_posters/${item.affiche}', '${item.titre}', '${desc}', '${actors}', '${directors}', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
+        onclick="openModal('/Films_posters/${item.affiche}', '${item.titre}', '${desc}', '${actors}', '${directors}', '${item.url}')">
       `;
 
       // Ajouter l'élément au conteneur

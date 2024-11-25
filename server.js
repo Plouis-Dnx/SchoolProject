@@ -50,6 +50,7 @@ app.get('/api/films', (req, res) => {
           description: row.description,
           affiche: row.Affiche,
           genre: row.thèmes,
+          url : row.url,
           acteurs: [],
           realisateurs: []
         });
