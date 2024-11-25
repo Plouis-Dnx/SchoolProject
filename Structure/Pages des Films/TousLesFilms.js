@@ -17,8 +17,6 @@ fetch('/api/films')
     data.forEach((item) => {
       const element = document.createElement('div');
       element.classList.add('movie-item');
-
-      const desc = item.description.replace(/'/g, "\\'");
       
       // Échapper les caractères pour éviter les erreurs dans les attributs
       const desc = item.description
