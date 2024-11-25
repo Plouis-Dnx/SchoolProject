@@ -453,3 +453,202 @@ WHERE idFilm = 48;
 UPDATE Films
 SET Affiche = 'Affiche_Rien_A_Declarer.webp'
 WHERE idFilm = 49;
+
+ALTER TABLE Films 
+ADD COLUMN url VARCHAR(100);
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/O4C5cwSbXZ8'
+WHERE idFilm = 1;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/8xx91zoASLY'
+WHERE idFilm = 2;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/qFCMm6gJQe8'
+WHERE idFilm = 3;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/HcoZbHBDHQA'
+WHERE idFilm = 4;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/HsPP6xSzQoE'
+WHERE idFilm = 5;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/oYGkAMHCOC4'
+WHERE idFilm = 6;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/O1CzgULNRGs'
+WHERE idFilm = 7;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/WiZC7l0ovvk'
+WHERE idFilm = 8;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/b0WH8wWmqtE'
+WHERE idFilm = 9;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/YVUYKVE8zm8'
+WHERE idFilm = 10;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/Vn8GriIog1s'
+WHERE idFilm = 11;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/H0J23Tk_lfY'
+WHERE idFilm = 12;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/a_OUHJziaoE'
+WHERE idFilm = 13;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/Z2UAv81ow40'
+WHERE idFilm = 14;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/WKzm6AZFbdc'
+WHERE idFilm = 15;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/pWK5crMuhHY'
+WHERE idFilm = 16;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/Wm3jXZhqj-I'
+WHERE idFilm = 17;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/OjuMPG3HwBs'
+WHERE idFilm = 18;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/RqoVqZXEpgc'
+WHERE idFilm = 19;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/E1jOiqbNTpo'
+WHERE idFilm = 20;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/glPta0GQkTI'
+WHERE idFilm = 21;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/ATGDQpH-gOM'
+WHERE idFilm = 22;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/dOJBaIjXGnQ'
+WHERE idFilm = 23;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/AVRk-UhPkHU'
+WHERE idFilm = 24;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/cWFD7WvDILE'
+WHERE idFilm = 25;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/X6QHJjjbKlA'
+WHERE idFilm = 26;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/d7yWagIcCLE'
+WHERE idFilm = 27;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/AzeAEmt-yno'
+WHERE idFilm = 28;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/McOmzgX09wo'
+WHERE idFilm = 29;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/DfsTji_tedk'
+WHERE idFilm = 30;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/E4FdK4VdGz0'
+WHERE idFilm = 31;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/4Q6wJQq3UKM'
+WHERE idFilm = 32;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/BPwXxQ-yd0Q'
+WHERE idFilm = 33;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/evUO4UCnrOs'
+WHERE idFilm = 34;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/WA1hCZFOPqs'
+WHERE idFilm = 35;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/ih9_s8YcfLc'
+WHERE idFilm = 36;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/K2XjgsfzDrU'
+WHERE idFilm = 37;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/7sxItylVdCM'
+WHERE idFilm = 38;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/ae-mIgmY-yo'
+WHERE idFilm = 39;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/KGHwr-9hc2c'
+WHERE idFilm = 40;
+
+UPDATE Films
+SET url = 'Affiche_Felins.jpg'
+WHERE idFilm = 41;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/iN9c5MG-Z3M'
+WHERE idFilm = 42;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/WywmJZVh2B4'
+WHERE idFilm = 43;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/eER6HAod0rg'
+WHERE idFilm = 44;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/JAKzzI1XAsM'
+WHERE idFilm = 45;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/f_vxVhjlIsc'
+WHERE idFilm = 46;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/ndCzT6dyOqk'
+WHERE idFilm = 47;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/0o9vD4prPPU'
+WHERE idFilm = 48;
+
+UPDATE Films
+SET url = 'https://www.youtube.com/embed/xONVqPzEqRM'
+WHERE idFilm = 49;
