@@ -18,13 +18,20 @@ fetch('/api/films')
       const element = document.createElement('div');
       element.classList.add('movie-item');
       
+      // Échapper les caractères pour éviter les erreurs dans les attributs
+      const desc = item.description
+                      .replace(/'/g, "\'") // Remplacer les apostrophes par \'
+                      .replace(/\r\n/g, ' '); // Remplacer les retours à la ligne
+      console.log(desc);
+      const actors = item.acteurs.map(actor => `${actor.prenom} ${actor.nom}`).join(', ');
+      const directors = item.realisateurs.map(director => `${director.prenom} ${director.nom}`).join(', ');
+
       // Ajouter des informations à l'élément créé
       element.innerHTML = `
-        <img src="/Films_posters/${item.Affiche}" alt="${item.titre}"
-        onclick="openModal('/Films_posters/${item.Affiche}', '${item.titre}','Description', 'Jean Lasalle', 'Jean Palasal', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
-        <p>${item.titre}</p>
+        <img src="/Films_posters/${item.affiche}" alt="${item.titre}"
+        onclick="openModal('/Films_posters/${item.affiche}', '${item.titre}', '${desc}', '${actors}', '${directors}', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
       `;
-      
+
       // Ajouter l'élément au conteneur
       container.appendChild(element);
     });
