@@ -16,10 +16,10 @@ fetch('/api/films')
       const element = document.createElement('div');
       element.classList.add('movie-item');
 
-      if(item.thèmes === 'Policier'){
+      if(item.genre === 'Policier'){
         // Ajouter des informations à l'élément créé
         element.innerHTML = `
-        <img src="/Films_posters/${item.Affiche}" alt="${item.titre}">
+        <img src="/Films_posters/${item.affiche}" alt="${item.titre}">
         <p>${item.titre}</p>
         `;
     

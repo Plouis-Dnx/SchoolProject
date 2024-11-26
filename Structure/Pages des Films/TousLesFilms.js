@@ -20,7 +20,7 @@ fetch('/api/films')
       
       // Échapper les caractères pour éviter les erreurs dans les attributs
       const desc = item.description
-                      .replace(/'/g, "\'") // Remplacer les apostrophes par \'
+                      .replaceAll("'", " ") // Remplacer les apostrophes par un espace
                       .replace(/\r\n/g, ' '); // Remplacer les retours à la ligne
       console.log(desc);
       const actors = item.acteurs.map(actor => `${actor.prenom} ${actor.nom}`).join(', ');
