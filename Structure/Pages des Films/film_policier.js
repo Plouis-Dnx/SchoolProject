@@ -17,14 +17,21 @@ fetch('/api/films')
       element.classList.add('movie-item');
 
       if(item.genre === 'Policier'){
+        // Échapper les caractères pour éviter les erreurs dans les attributs
+        const desc = item.description
+                        .replaceAll("'", " ") // Remplacer les apostrophes par un espace
+                        .replace(/\r\n/g, ' '); // Remplacer les retours à la ligne
+        const actors = item.acteurs.map(actor => `${actor.prenom} ${actor.nom}`).join(', ');
+        const directors = item.realisateurs.map(director => `${director.prenom} ${director.nom}`).join(', ');
+
         // Ajouter des informations à l'élément créé
         element.innerHTML = `
-        <img src="/Films_posters/${item.affiche}" alt="${item.titre}">
-        <p>${item.titre}</p>
+          <img src="/Films_posters/${item.affiche}" alt="${item.titre}"
+          onclick="openModal('/Films_posters/${item.affiche}', '${item.titre}', '${desc}', '${actors}', '${directors}', '${item.url}')">
         `;
-    
-        // Ajouter l'élément au conteneur
-        container.appendChild(element);
+        
+          // Ajouter l'élément au conteneur
+          container.appendChild(element);
       }
     });
   })

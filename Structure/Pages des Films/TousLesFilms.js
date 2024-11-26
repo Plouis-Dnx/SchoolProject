@@ -22,7 +22,6 @@ fetch('/api/films')
       const desc = item.description
                       .replaceAll("'", " ") // Remplacer les apostrophes par un espace
                       .replace(/\r\n/g, ' '); // Remplacer les retours à la ligne
-      console.log(desc);
       const actors = item.acteurs.map(actor => `${actor.prenom} ${actor.nom}`).join(', ');
       const directors = item.realisateurs.map(director => `${director.prenom} ${director.nom}`).join(', ');
 

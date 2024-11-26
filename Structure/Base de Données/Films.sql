@@ -454,6 +454,7 @@ UPDATE Films
 SET Affiche = 'Affiche_Rien_A_Declarer.webp'
 WHERE idFilm = 49;
 
+--Nouvelle colonne : url des bandes annonces (25/11/2024)
 ALTER TABLE Films 
 ADD COLUMN url VARCHAR(100);
 

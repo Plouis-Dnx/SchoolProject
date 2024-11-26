@@ -261,8 +261,6 @@ a:hover {
     color: white; /* Texte blanc pour le contraste */
     padding: 20px;
     border-radius: 10px;
-    max-width: 900px;
-    max-height: 600px;
     width: 80%;
     height: 70%;
     overflow: auto;

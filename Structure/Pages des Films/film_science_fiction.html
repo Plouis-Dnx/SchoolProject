@@ -41,6 +41,27 @@
         </div>
     </div>
 
-    <script src="film_science_fiction.js"></script>
+    <!-- Modale -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-left">
+                <img id="modal-image" src="" alt="Film poster">
+            </div>
+            <div class="modal-right">
+                <h2 id="modal-title"></h2>
+                <p id="modal-summary"></p>
+                <p><strong>Acteurs :</strong> <span id="modal-actors"></span></p>
+                <p><strong>Réalisateur :</strong> <span id="modal-director"></span></p>
+                <div class="modal-trailer">
+                    <h3>Bande-annonce :</h3>
+                    <iframe id="modal-trailer-video" width="800" height="450" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="modale.js"></script>
+    <script type="module" src="film_science_fiction.js"></script>
 </body>
 </html>
