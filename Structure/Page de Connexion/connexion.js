@@ -1,64 +1,83 @@
-// Récupération du formulaire par son ID
-const form = document.getElementById('myForm');
+const formConnexion = document.getElementById('form-connexion');
+const loginFormDiv = document.getElementById('login-form');
+const connectedStateDiv = document.getElementById('connected-state');
+const connectedMessage = document.getElementById('connected-message');
+const logoutButton = document.getElementById('logout-button');
 
-// Ajout d'un écouteur d'événements pour la soumission du formulaire
-form.addEventListener('submit', function (event) {
-  event.preventDefault(); // Empêche le rechargement de la page
+// Vérifier si l'utilisateur est connecté au chargement de la page
+async function checkUserSession() {
+    try {
+        const response = await fetch('http://localhost:3000/api/session', {
+            credentials: 'include' // Nécessaire pour envoyer les cookies
+        });
 
-  // Récupération des données du formulaire
-  const email = document.getElementById('email').value.trim();
-  const password = document.getElementById('password').value.trim();
+        if (response.ok) {
+            const data = await response.json();
+            if (data.isLoggedIn) {
+                showConnectedState(data.email);
+            }
+        }
+    } catch (error) {
+        console.error("Erreur lors de la vérification de la session :", error);
+    }
+}
 
-  // Validation des champs
-  if (!email) {
-    alert("L'email est requis.");
-    return;
-  }
-  if (!email.includes('@') || !email.includes('.')) {
-    alert("Veuillez entrer une adresse email valide.");
-    return;
-  }
-  if (!password) {
-    alert("Le mot de passe est requis.");
-    return;
-  }
-  if (password.length < 8) {
-    alert("Le mot de passe doit contenir au moins 8 caractères.");
-    return;
-  }
+// Affiche l'état connecté
+function showConnectedState(email) {
+    connectedMessage.innerText = `Connecté en tant que ${email}`;
+    loginFormDiv.style.display = 'none';
+    connectedStateDiv.style.display = 'block';
+}
 
-  // Préparation des données à envoyer
-  const formData = {
-    email: email,
-    password: password,
-  };
+// Affiche le formulaire de connexion
+function showLoginForm() {
+    loginFormDiv.style.display = 'block';
+    connectedStateDiv.style.display = 'none';
+}
 
-  // Envoi des données au serveur
-  fetch('/api/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData), // Conversion en JSON
-  })
-    .then((response) => {
-      // Vérification du statut de la réponse
-      if (response.ok) {
-        return response.json();
-      } else if (response.status === 401) {
-        throw new Error('Identifiants incorrects.');
-      } else {
-        throw new Error('Erreur serveur. Veuillez réessayer plus tard.');
-      }
-    })
-    .then((data) => {
-      // Succès : afficher un message ou rediriger l'utilisateur
-      alert('Connexion réussie !');
-      window.location.href = '/dashboard'; // Exemple de redirection
-    })
-    .catch((error) => {
-      // Gestion des erreurs
-      console.error('Erreur lors de la connexion :', error);
-      alert(error.message);
-    });
+// Connexion utilisateur
+formConnexion.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    try {
+        const response = await fetch('http://localhost:3000/api/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password }),
+            credentials: 'include'
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            showConnectedState(data.user.email);
+        } else {
+            alert(data.error || 'Erreur lors de la connexion');
+        }
+    } catch (error) {
+        console.error('Erreur réseau lors de la connexion :', error);
+    }
 });
+
+// Déconnexion utilisateur
+logoutButton.addEventListener('click', async () => {
+    try {
+        const response = await fetch('http://localhost:3000/api/logout', {
+            method: 'POST',
+            credentials: 'include'
+        });
+
+        if (response.ok) {
+            showLoginForm();
+        } else {
+            alert('Erreur lors de la déconnexion');
+        }
+    } catch (error) {
+        console.error('Erreur réseau lors de la déconnexion :', error);
+    }
+});
+
+// Vérifier la session au chargement
+checkUserSession();

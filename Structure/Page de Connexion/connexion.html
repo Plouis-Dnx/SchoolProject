@@ -39,22 +39,29 @@
     <div class="container">
         <img class="popcorn" src="/Accueil/popcorn.png" alt="popcorn">
 
-        <div class="box">
-            <form>
+        <div class="box" id="login-form">
+            <form id="form-connexion">
                 <div>
                     <label for="email"> Email </label>  
-                    <div> <input id="email" type = "email" placeholder="exemple@exemple.com"> </div>
+                    <div> <input id="email" type="email" placeholder="exemple@exemple.com"> </div>
                 </div>
                 <div>
                     <label for="password"> Password </label> 
-                    <div> <input id="password" type = "password" placeholder="password321"> </div>
+                    <div> <input id="password" type="password" placeholder="password321"> </div>
                 </div>
-                <button class="signin-button"> Sign In </button>
-                <button class="register-button"> Register </button>
+                <button class="signin-button" type="submit"> Sign In </button>
+                <button class="register-button" type="submit"> Register </button>
             </form>
         </div>
 
+        <div id="connected-state" style="display: none; text-align: center;">
+            <h2 id="connected-message">Connecté en tant que :</h2>
+            <button id="logout-button">Se déconnecter</button>
+        </div>
+
         <img class="bobine" src="bobine.png" alt="bobine">
+
+        <script src="connexion.js"></script>
     </div>
 </body>
 </html>
