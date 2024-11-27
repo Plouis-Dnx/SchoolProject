@@ -1,18 +1,29 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const sqlite3 = require('sqlite3').verbose(); // Importer le module sqlite3
+const sqlite3 = require('sqlite3').verbose();
+const bcrypt = require('bcrypt'); // Pour sécuriser les mots de passe
+const session = require('express-session'); // Pour gérer les sessions utilisateur
 
 const app = express();
 const port = 3000;
 
-// Activer CORS pour toutes les origines
+// Middleware
 app.use(cors());
+app.use(express.json()); // Pour parser les données JSON
+app.use(express.urlencoded({ extended: true })); // Pour parser les données des formulaires
 
-// On spécifie à Express que les dossiers sont accessible "publiquement"
-//En gros, on accorde l'accès à nos dossiers à notre serveur : 
-app.use('/Films',express.static(path.join(__dirname, "Structure/Pages des Films")));
-app.use('/Accueil',express.static(path.join(__dirname, "Structure/Page d'accueil")));
+// Configuration des sessions utilisateur
+app.use(session({
+  secret: 'votreCleSecrete',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false } // Pour HTTP uniquement. Mettez `true` si vous utilisez HTTPS
+}));
+
+// Accès public aux fichiers
+app.use('/Films', express.static(path.join(__dirname, "Structure/Pages des Films")));
+app.use('/Accueil', express.static(path.join(__dirname, "Structure/Page d'accueil")));
 app.use('/Films_posters', express.static(path.join(__dirname, 'Structure/Films_posters')));
 app.use('/Connexion', express.static(path.join(__dirname, 'Structure/Page de Connexion')));
 
@@ -25,23 +36,26 @@ const db = new sqlite3.Database('database.db', (err) => {
   }
 });
 
-// Route pour récupérer les données de la table Films
+// Route pour récupérer les données des films
 app.get('/api/films', (req, res) => {
-  const sql = 'SELECT Films.*, nomActeur, pnomActeur, nomRéalisateur, pnomRéalisateur, thèmes FROM Films, Acteurs, Réalisteurs, AVOIR WHERE Films.idFilm = AVOIR.idFilm AND AVOIR.idActeur = Acteurs.idActeur AND AVOIR.idRéalisateur = Réalisteurs.idRéalisateur;'; 
-  // Requête SQL pour récupérer toutes les lignes de la table Films
-  
-  db.all(sql, [], (err, rows) => {  // Exécute la requête
+  const sql = `
+    SELECT Films.*, nomActeur, pnomActeur, nomRéalisateur, pnomRéalisateur, thèmes 
+    FROM Films, Acteurs, Réalisteurs, AVOIR 
+    WHERE Films.idFilm = AVOIR.idFilm 
+    AND AVOIR.idActeur = Acteurs.idActeur 
+    AND AVOIR.idRéalisateur = Réalisteurs.idRéalisateur;
+  `;
+
+  db.all(sql, [], (err, rows) => {
     if (err) {
       res.status(500).json({ error: err.message });
       return;
     }
 
-    // Regroupement des données
     const filmsMap = new Map();
 
     rows.forEach(row => {
       if (!filmsMap.has(row.idFilm)) {
-        // Si le film n'existe pas encore dans le Map, on l'ajoute
         filmsMap.set(row.idFilm, {
           idFilm: row.idFilm,
           titre: row.titre,
@@ -50,35 +64,114 @@ app.get('/api/films', (req, res) => {
           description: row.description,
           affiche: row.Affiche,
           genre: row.thèmes,
-          url : row.url,
+          url: row.url,
           acteurs: [],
           realisateurs: []
         });
       }
 
-      // Récupérer le film actuel
       const film = filmsMap.get(row.idFilm);
 
-      // Ajouter l'acteur si présent
       if (row.nomActeur && row.pnomActeur) {
         film.acteurs.push({ nom: row.nomActeur, prenom: row.pnomActeur });
       }
 
-      // Ajouter le réalisateur si présent
       if (row.nomRéalisateur && row.pnomRéalisateur) {
         const realisateur = { nom: row.nomRéalisateur, prenom: row.pnomRéalisateur };
-        // Ajouter uniquement si ce réalisateur n'est pas déjà dans la liste
         if (!film.realisateurs.some(r => r.nom === realisateur.nom && r.prenom === realisateur.prenom)) {
           film.realisateurs.push(realisateur);
         }
       }
     });
 
-    // Convertir le Map en tableau
     const films = Array.from(filmsMap.values());
-
     res.json(films);
   });
+});
+
+// Inscription d'un utilisateur
+app.post('/api/register', async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({ error: 'Email et mot de passe requis.' });
+  }
+
+  try {
+    const hashedPassword = await bcrypt.hash(password, 10);
+    db.run(
+      `INSERT INTO Utilisateurs (email, mdp) VALUES (?, ?)`,
+      [email, hashedPassword],
+      function (err) {
+        if (err) {
+          if (err.message.includes('UNIQUE')) {
+            return res.status(400).json({ error: 'Cet email est déjà utilisé.' });
+          }
+          return res.status(500).json({ error: 'Erreur serveur.' });
+        }
+        res.status(201).json({ message: 'Utilisateur créé avec succès.' });
+      }
+    );
+  } catch (err) {
+    res.status(500).json({ error: 'Erreur serveur.' });
+  }
+});
+
+// Connexion d'un utilisateur
+app.post('/api/login', (req, res) => {
+  const { email, password } = req.body;
+
+  db.get(
+    `SELECT * FROM Utilisateurs WHERE email = ?`,
+    [email],
+    async (err, user) => {
+      if (err) {
+        return res.status(500).json({ error: 'Erreur serveur.' });
+      }
+      if (!user) {
+        return res.status(401).json({ error: 'Email ou mot de passe incorrect.' });
+      }
+
+      const isPasswordCorrect = await bcrypt.compare(password, user.mdp); // Utilisez 'mdp' pour le mot de passe
+      if (!isPasswordCorrect) {
+        return res.status(401).json({ error: 'Email ou mot de passe incorrect.' });
+      }
+
+      req.session.idUt = user.idUt; // Utilisez 'idUt' pour la session
+      res.json({ message: 'Connexion réussie.', user: { email: user.email } });
+    }
+  );
+});
+
+
+// Déconnexion d'un utilisateur
+app.post('/api/logout', (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      return res.status(500).json({ error: 'Erreur lors de la déconnexion.' });
+    }
+    res.json({ message: 'Déconnexion réussie.' });
+  });
+});
+
+app.get('/api/session', (req, res) => {
+  if (req.session.idUt) {
+    db.get(
+      `SELECT email FROM Utilisateurs WHERE idUt = ?`,
+      [req.session.idUt],
+      (err, user) => {
+        if (err) {
+          return res.status(500).json({ error: 'Erreur serveur.' });
+        }
+        if (!user) {
+          return res.status(401).json({ error: 'Session invalide.' });
+        }
+        res.json({ isLoggedIn: true, email: user.email });
+      }
+    );
+  } else {
+    res.json({ isLoggedIn: false });
+  }
 });
 
 // Route pour servir le fichier HTML

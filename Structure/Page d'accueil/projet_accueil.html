@@ -46,66 +46,39 @@
     <!-- Section Titres à la Une -->
     <div class="container">
         <h2 class="section-title">Titres à la Une</h2>
-        <div class="movie-grid">
-            <div class="movie-item">
-                <img src="/Films_posters/Affiche_Matrix.jpg" alt="Matrix">
-                <p>Matrix</p>
-            </div>
-            <div class="movie-item">
-                <img src="/Films_posters/Affiche_Inception.webp" alt="Inception">
-                <p>Inception</p>
-            </div>
-            <div class="movie-item">
-                <img src="/Films_posters/Affiche_Avatar.jpg" alt="Avatar">
-                <p>Avatar</p>
-            </div>
-        </div>
+        <div class="movie-grid" id="mg"></div>
     </div>
 
     <!-- Section Nos Titres -->
     <div class="container">
         <h2 class="section-title">Nos Autres Titres</h2>
         <div class="movie-card">
-            <div class="movie-grid">
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_Pirate_des_Caraibes.jpg" alt="Pirates des Caraïbes : La Malédiction du Black Pearl">
-                    <p>Pirates des Caraïbes : La Malédiction du Black Pearl</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_Le_Seigneur_des_Anneaux.jfif" alt="Le Seigneur des Anneaux : La Communauté de l'Anneau">
-                    <p>Le Seigneur des Anneaux : La Communauté de l'Anneau</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_Django_Unchained.jpg" alt="Django Unchained">
-                    <p>Django Unchained</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_Blade_Runner_2049.jpg" alt="Blade Runner 2049">
-                    <p>Blade Runner 2049</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_La_Planete_des_Singes.webp" alt="La Planète des Singes : Les origines">
-                    <p>La Planète des Singes : Les origines</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_John_Wick.jpg" alt="John Wick">
-                    <p>John Wick</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_Les_Huits_Salopards.jpg" alt="Les Huit Salopards">
-                    <p>Les Huit Salopards</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_Les_Trois_Mousquetaires.jpg" alt="Les Trois Mousquetaires d'Artagnan">
-                    <p>Les Trois Mousquetaires d'Artagnan</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Films_posters/Affiche_James_Bond.jpg" alt="James Bond : Skyfall">
-                    <p>James Bond : Skyfall</p>
+            <div class="movie-grid" id="mg2"></div>
+        </div>
+    </div>
+
+    <!-- Modale -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-left">
+                <img id="modal-image" src="" alt="Film poster">
+            </div>
+            <div class="modal-right">
+                <h2 id="modal-title"></h2>
+                <p id="modal-summary"></p>
+                <p><strong>Acteurs :</strong> <span id="modal-actors"></span></p>
+                <p><strong>Réalisateur :</strong> <span id="modal-director"></span></p>
+                <div class="modal-trailer">
+                    <h3>Bande-annonce :</h3>
+                    <iframe id="modal-trailer-video" width="800" height="450" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="module" src="/Films/modale.js"></script>
+    <script type="module" src="projet_accueil.js"></script>
 	
 </body>
 </html>

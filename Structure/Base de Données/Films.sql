@@ -653,3 +653,10 @@ WHERE idFilm = 48;
 UPDATE Films
 SET url = 'https://www.youtube.com/embed/xONVqPzEqRM'
 WHERE idFilm = 49;
+
+--Retrait de A l'aube de notre histoire
+DELETE FROM AVOIR
+WHERE idFilm = 42;
+
+DELETE FROM Films
+WHERE idFilm = 42;
