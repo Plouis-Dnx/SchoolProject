@@ -44,4 +44,5 @@ Une fois sur le site, vous pouvez :
 Voici comment se présente la consultation d'un film :
 
 ![Capture d'écran](Images/Films.png)
+
 ![Capture d'écran](Images/Modale.png)
