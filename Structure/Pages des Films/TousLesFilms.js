@@ -1,5 +1,3 @@
-import { openModal, closeModal } from "/Films/modale.js";
-
 fetch('/api/films')
   .then((response) => {
     // Vérifier si la réponse est OK (code 2xx)
