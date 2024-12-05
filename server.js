@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt'); // Pour sécuriser les mots de passe
 const session = require('express-session'); // Pour gérer les sessions utilisateur
@@ -9,13 +8,11 @@ const app = express();
 const port = 3000;
 
 // Middleware
-app.use(cors());
 app.use(express.json()); // Pour parser les données JSON
-app.use(express.urlencoded({ extended: true })); // Pour parser les données des formulaires
 
 // Configuration des sessions utilisateur
 app.use(session({
-  secret: 'votreCleSecrete',
+  secret: 'SecretKey',
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false } // Pour HTTP uniquement. Mettez `true` si vous utilisez HTTPS
