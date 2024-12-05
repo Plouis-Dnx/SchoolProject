@@ -90,28 +90,40 @@ app.get('/api/films', (req, res) => {
 });
 
 // Inscription d'un utilisateur
+// Inscription d'un utilisateur
 app.post('/api/register', async (req, res) => {
   const { email, password } = req.body;
 
+  // Vérification des données
   if (!email || !password) {
     return res.status(400).json({ error: 'Email et mot de passe requis.' });
   }
 
   try {
-    const hashedPassword = await bcrypt.hash(password, 10);
-    db.run(
-      `INSERT INTO Utilisateurs (email, mdp) VALUES (?, ?)`,
-      [email, hashedPassword],
-      function (err) {
-        if (err) {
-          if (err.message.includes('UNIQUE')) {
-            return res.status(400).json({ error: 'Cet email est déjà utilisé.' });
-          }
-          return res.status(500).json({ error: 'Erreur serveur.' });
-        }
-        res.status(201).json({ message: 'Utilisateur créé avec succès.' });
+    // Vérifier si l'email existe déjà dans la base de données
+    db.get(`SELECT * FROM Utilisateurs WHERE email = ?`, [email], async (err, existingUser) => {
+      if (err) {
+        return res.status(500).json({ error: 'Erreur serveur.' });
       }
-    );
+
+      // Si un utilisateur existe déjà avec cet email, retourner un message d'erreur
+      if (existingUser) {
+        return res.status(400).json({ error: 'Vous avez déjà un compte, connectez-vous !' });
+      }
+
+      // Si l'email est unique, on procède à l'inscription
+      const hashedPassword = await bcrypt.hash(password, 10);
+      db.run(
+        `INSERT INTO Utilisateurs (email, mdp) VALUES (?, ?)`,
+        [email, hashedPassword],
+        function (err) {
+          if (err) {
+            return res.status(500).json({ error: 'Erreur serveur.' });
+          }
+          res.status(201).json({ message: 'Utilisateur créé avec succès.' });
+        }
+      );
+    });
   } catch (err) {
     res.status(500).json({ error: 'Erreur serveur.' });
   }

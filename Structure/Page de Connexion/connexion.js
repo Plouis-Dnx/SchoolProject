@@ -37,27 +37,53 @@ function showLoginForm() {
 
 // Connexion utilisateur
 formConnexion.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    e.preventDefault(); // Empêche le rechargement de la page
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
 
-    try {
-        const response = await fetch('http://localhost:3000/api/login', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, password }),
-            credentials: 'include'
-        });
+    // Identifier le bouton cliqué
+    const action = e.submitter.classList.contains('signin-button') ? 'signin-button' : 'register-button';
 
-        const data = await response.json();
+    if (action === 'signin-button') {
+        // Connexion de l'utilisateur
+        try {
+            const response = await fetch('http://localhost:3000/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password }),
+                credentials: 'include' // Inclure les cookies de session
+            });
 
-        if (response.ok) {
-            showConnectedState(data.user.email);
-        } else {
-            alert(data.error || 'Erreur lors de la connexion');
+            const data = await response.json();
+
+            if (response.ok) {
+                showConnectedState(data.user.email);
+            } else {
+                alert(data.error || 'Erreur lors de la connexion');
+            }
+        } catch (error) {
+            console.error('Erreur réseau lors de la connexion :', error);
         }
-    } catch (error) {
-        console.error('Erreur réseau lors de la connexion :', error);
+
+    } else if (action === 'register-button') {
+        // Inscription de l'utilisateur
+        try {
+            const response = await fetch('http://localhost:3000/api/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert('Inscription réussie ! Vous pouvez maintenant vous connecter.');
+            } else {
+                alert(data.error || 'Erreur lors de l\'inscription');
+            }
+        } catch (error) {
+            console.error('Erreur réseau lors de l\'inscription :', error);
+        }
     }
 });
 
