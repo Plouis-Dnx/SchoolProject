@@ -86,7 +86,7 @@ formConnexion.addEventListener('submit', async (e) => {
         }
     }
 });
-
+    
 // Déconnexion utilisateur
 logoutButton.addEventListener('click', async () => {
     try {

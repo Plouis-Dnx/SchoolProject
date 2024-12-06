@@ -12,7 +12,7 @@ app.use(express.json()); // Pour parser les données JSON
 
 // Configuration des sessions utilisateur
 app.use(session({
-  secret: 'SecretKey',
+  secret: 'votreCleSecrete',
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false } // Pour HTTP uniquement. Mettez `true` si vous utilisez HTTPS
@@ -86,7 +86,6 @@ app.get('/api/films', (req, res) => {
   });
 });
 
-// Inscription d'un utilisateur
 // Inscription d'un utilisateur
 app.post('/api/register', async (req, res) => {
   const { email, password } = req.body;
