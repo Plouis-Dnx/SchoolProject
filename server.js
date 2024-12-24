@@ -140,12 +140,12 @@ app.post('/api/login', (req, res) => {
         return res.status(401).json({ error: 'Email ou mot de passe incorrect.' });
       }
 
-      const isPasswordCorrect = await bcrypt.compare(password, user.mdp); // Utilisez 'mdp' pour le mot de passe
+      const isPasswordCorrect = await bcrypt.compare(password, user.mdp); 
       if (!isPasswordCorrect) {
         return res.status(401).json({ error: 'Email ou mot de passe incorrect.' });
       }
 
-      req.session.idUt = user.idUt; // Utilisez 'idUt' pour la session
+      req.session.idUt = user.idUt; 
       res.json({ message: 'Connexion réussie.', user: { email: user.email } });
     }
   );
